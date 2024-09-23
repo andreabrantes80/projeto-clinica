@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica NutriForm</title>
+    <!-- Favicon é o icone que aparece no navegador -->
+
+    <!-- Estilos CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+
+
+    <!-- Menu de Cabeçalho -->
+
+    <header>
+      <div class="row">
+        <div class="logo-nav">
+          <div class="logo">
+            <img src="img/logo02.jpg" style="width: 80px;" alt="Logo da Instituição">
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <body align="center">
+         <!-- Carrossel com css para Banner -->
+<section>
+    <div class="banner">
+        <div class="slides">
+            <img src="img/nutri01.jpg" alt="banner">
+            <img src="img/nutri02.avif" alt="banner">
+            <img src="img/nutri03.jpg" alt="banner">
+            <!-- <img src="img/nutri03.jpg" alt="banner">
+            <img src="img/nutri04.jfif" alt="banner"> -->
+        </div>
+    </div>
+    </section>
+        <!-- Seção Principal -->
+
+            <section id="home">
+                <h1>Bem-vindo à Clínica Nutri Form</h1>
+                <p>Nossa missão é fornecer educação de qualidade para todos.</p>
+                <img src="img/nutri03.jpg" alt="Imagem da Instituição" width="500px">
+            </section>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Uma alimentação equilibrada é a receita para um corpo satisfeito e uma mente serena.</p>
+
+    <div class="content-container-calc">
+        <img src="img/nutri04.jfif" alt="Imagem da Instituição" width="500px">
+
+        <div class="calculator">
+            <input type="text" class="calculator-display" id="display" disabled>
+            <div class="calculator-buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('(')">(</button>
+                <button onclick="appendToDisplay(')')">)</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('0')" class="zero-btn">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+            <section class="cursos">
+                <h2>Nossos Cursos</h2>
+                <p>Oferecemos uma variedade de cursos nas áreas de tecnologia, ciência, e artes.</p>
+                <!-- Video do YouTube -->
+                <div>
+                   <iframe width="600" height="380" src="https://www.youtube.com/embed/AVm0lD1A4Gg" title="Alimentação para DIABÉTICO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!-- Áudio -->
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para mais informações.</p>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+         <script src="js/script.js"></script>
+      </body>
+  <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-column">
+              <h4>Contato</h4>
+              <p><i class="fas fa-phone-alt"></i> +55 (11) 1234-5678</p>
+              <p><i class="fas fa-envelope"></i> contato@exemplo.com</p>
+          </div>
+          <div class="footer-column">
+              <h4>Endereço</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, São Paulo - SP</p>
+              <p><i class="fas fa-clock"></i> Seg-Sex: 8:00 - 18:00</p>
+          </div>
+          <div class="footer-column">
+              <h4>Siga-nos</h4>
+              <p><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+              <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
+              <p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+      </div>
+  </footer>
+
+</html>
